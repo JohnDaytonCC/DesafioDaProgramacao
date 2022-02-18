@@ -8,7 +8,7 @@ public class Program {
 		
 		Scanner input = new Scanner(System.in);					// Comando para habilitar a entrada de dados via teclado.
 		
-																// Instruções para informar o usuário a função do programa
+																// Instruções para informar ao usuário a função do programa
 		System.out.println("Este programa fonecerá a imagem de uma escada de N degraus, onde \nesse valor N será informado pelo usuário. ");
 		System.out.println();
 		
@@ -22,7 +22,7 @@ public class Program {
 		for(int i = 1; i <= n; i++) {							// Laço que determina a quantidade de linas ou degraus da escada
 			
 			for(int j=1; j<=(n-i); j++) {						// Laço que determina a quantidade do caractere espaço em cada linha
-				degrau = degrau + " ";							// Inclução da quantidade de vezes que o caractere espaço será utilizado em cada linha
+				degrau = degrau + " ";							// Inclusão da quantidade de vezes que o caractere espaço será utilizado em cada linha
 			}													// Final do laço que determina a quantidade do caractere espaço em cada linha
 			
 			for(int k=1; k<=i; k++) {							// Laço que determina a quantidade do caractere asterisco em cada linha

@@ -28,13 +28,13 @@ public class Program {
 
 		while (flag) {														// Inicialização do laço while
 			
-			if(senha.length() < 6){											// veridica o tamanho da String, caso tenha menos de 6 caracteres, entrará no if.
+			if(senha.length() < 6){											// verifica o tamanho da String, caso tenha menos de 6 caracteres, entrará no if.
 				System.out.print("\nSua senha não é considerada forte.\nPor favor acrescente mais " + String.format("%d", (6 - senha.length())) + " caracteres à sua senha.");
 				System.out.print("\nDigite a senha: ");
 				senha = input.nextLine();									// Guardando a nova senha passada pelo usuário.
 			}else {															// Caso a senha tenha 6 ou mais caractere indicará a mensagem de sucesso.
 				System.out.println("\nSua senha foi cadastrada com sucesso!");
-				flag = false;												// Mudando do valor do indicador para sair do laço de repetição e finalizar o programa.
+				flag = false;												// Mudando o valor do indicador para sair do laço de repetição e finalizar o programa.
 			}																// Fim do if else
 		}																	// Fim do laço while
 
